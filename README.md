@@ -1,5 +1,5 @@
 ## DHGift
-Remote adminitration tool for android
+Android Remote adminitration tool (for learning purpose only)
 
 ### Features
 - Permissions bypass (android 12 below)
