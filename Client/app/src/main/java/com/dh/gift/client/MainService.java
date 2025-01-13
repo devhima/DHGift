@@ -40,7 +40,7 @@ public class MainService extends Service {
     private static WebSocketClient client;
 
     public static boolean isConnected = false;
-    private final String SERVICE_RESTART_INTENT = "com.ot.grhq.receiver.restartservice";
+    private final String SERVICE_RESTART_INTENT = "com.dh.gift.receiver.restartservice";
     private NotificationManagerCompat notificationManager;
     final Handler handler = new Handler();
     final int delay = 5000;

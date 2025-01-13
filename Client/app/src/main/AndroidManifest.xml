@@ -81,7 +81,7 @@
             android:name=".receivers.ServiceTerminate"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.ot.grhq.receiver.restartservice" />
+                <action android:name="com.dh.gift.receiver.restartservice" />
             </intent-filter>
         </receiver>
         <receiver
