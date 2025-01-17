@@ -47,7 +47,7 @@
                                             <td><?= $location->getLatitude(); ?></td>
                                             <td><?= $location->getLongitude(); ?></td>
                                             <td><?= $location->getAltitude(); ?></td>
-                                            <td class="text-end"><?= date("d/m/Y H:i:s", intval($location->getTimestamp()) / 1000); ?></td>
+                                            <td class="text-end"><?= date("d/m/Y H:i:s", (int)(intval($location->getTimestamp()) / 1000)); ?></td>
                                         </tr>
                                     <?php endforeach ?>
                                 <?php else: ?>

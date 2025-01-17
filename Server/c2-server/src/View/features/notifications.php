@@ -26,7 +26,7 @@
                                         <tr>
                                             <td><?= $notification->getSender(); ?></td>
                                             <td><?= $notification->getContent(); ?></td>
-                                            <td class="text-end"><?= date("d/m/Y H:i:s", intval($notification->getTimestamp()) / 1000); ?></td>
+                                            <td class="text-end"><?= date("d/m/Y H:i:s",(int) (intval($notification->getTimestamp()) / 1000)); ?></td>
                                         </tr>
                                     <?php endforeach ?>
                                 <?php else: ?>
